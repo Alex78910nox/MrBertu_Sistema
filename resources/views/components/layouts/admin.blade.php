@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Pollería El Sabroso</title>
+    <title>Mr. Bertu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
@@ -23,8 +23,9 @@
                         <a href="{{ route('admin.dashboard') }}" class="text-white hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Dashboard</a>
                         <a href="{{ route('admin.sucursales.index') }}" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Sucursales</a>
                         <a href="{{ route('admin.users.index') }}" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Personal</a>
-                        <a href="#" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Insumos</a>
-                        <a href="#" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Menú</a>
+                        <a href="{{ route('admin.insumos.index') }}" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Insumos</a>
+                        <a href="{{ route('admin.inventario.index') }}" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Inventario</a>
+                        <a href="{{ route('admin.productos.index') }}" class="text-orange-100 hover:bg-orange-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition">Productos</a>
                     </div>
                 </div>
 
@@ -53,8 +54,9 @@
                 <a href="{{ route('admin.dashboard') }}" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800">Dashboard</a>
                 <a href="{{ route('admin.sucursales.index') }}" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Sucursales</a>
                 <a href="{{ route('admin.users.index') }}" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Personal</a>
-                <a href="#" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Insumos</a>
-                <a href="#" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Menú</a>
+                <a href="{{ route('admin.insumos.index') }}" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Insumos</a>
+                <a href="{{ route('admin.inventario.index') }}" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Inventario</a>
+                <a href="{{ route('admin.productos.index') }}" class="text-orange-100 block px-3 py-2 rounded-md text-base font-medium hover:bg-orange-800 hover:text-white">Productos</a>
             </div>
             
             <div class="pt-4 pb-4 border-t border-orange-800">

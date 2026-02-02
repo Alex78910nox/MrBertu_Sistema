@@ -18,4 +18,8 @@ class InventarioSucursal extends Model
         'fecha_ingreso', 
         'fecha_vencimiento'
     ];
+
+    protected $casts = [
+        'stock_actual' => 'integer',
+    ];
 }

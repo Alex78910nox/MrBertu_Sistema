@@ -69,7 +69,7 @@ return new class extends Migration
             $table->foreignId('sucursal_id')->constrained('sucursales')->onDelete('cascade');
             $table->foreignId('insumo_id')->constrained('insumos')->onDelete('cascade');
             
-            $table->decimal('stock_actual', 10, 3)->default(0); 
+            $table->decimal('stock_actual')->default(0); 
             $table->date('fecha_ingreso');     
             $table->date('fecha_vencimiento'); // Dato crítico para no vender comida podrida
             

@@ -22,7 +22,7 @@ class Sucursal extends Model
     public function insumos()
     {
         return $this->belongsToMany(Insumo::class, 'inventario_sucursal')
-                    ->withPivot('stock_actual', 'stock_minimo', 'fecha_ingreso', 'fecha_vencimiento');
+                    ->withPivot('stock_actual', 'fecha_ingreso', 'fecha_vencimiento');
     }
     // Relación con Ventas (Opcional, pero útil a futuro)
     public function ventas()
